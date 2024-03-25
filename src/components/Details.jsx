@@ -18,16 +18,14 @@ function Details() {
                             setMenu(index);
                             // console.log(index);
                         }}
-                            className={'bg-pink-300 rounded-2xl relative z-[1] cursor-pointer hover:bg-pink-400 hover:font-semibold duration-200' + 
-                            (menu == index ? ' border-2 border-pink-400 font-bold px-4 py-3' : ' border-2 border-transparent px-3 py-1')}>
+                            className={'bg-pink-300 rounded-2xl relative z-[1] cursor-pointer hover:bg-pink-400 hover:font-semibold duration-200' +
+                                (menu == index ? ' border-2 border-pink-400 font-bold px-4 py-3' : ' border-2 border-transparent px-3 py-1')}>
                             {item}
                         </div>
                     ))}
 
                 </div>
                 <div className='relative bg-pink-200 w-full h-[90%] rounded-3xl flex flex-col justify-start items-start p-2 md:p-5 lg:p-10 duration-200 overflow-auto'>
-                    {menu == 0 && <EducationData />}
-                    {menu == 1 && <ExperienceData />}
                     {React.createElement(components[menu])}
                 </div>
             </div>
