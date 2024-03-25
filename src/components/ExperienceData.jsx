@@ -7,6 +7,7 @@ function ExperienceData() {
         <div className='w-full h-full flex flex-col gap-3 justify-start items-start rounded-3xl max-md:p-2'>
 
             <div className='font-semibold text-2xl md:text-3xl'>Experience</div>
+            
             <div className='text-base flex flex-col'>
                 <div className='break-words font-semibold'>
                     ASHA TECH CORPORATION CO., LTD.
