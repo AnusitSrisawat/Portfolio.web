@@ -5,8 +5,8 @@ function Profile() {
     const [count, setCount] = useState(0)
 
     return (
-        <div className='relative w-full lg:w-2/5 h-[80vh] lg:h-full bg-pink-300 rounded-3xl p-5 lg:p-10 flex flex-col gap-8 justify-start items-center overflow-auto'>
-            <div className='font-semibold text-2xl md:text-3xl'>Anusit Srisawat</div>
+        <div className='relative w-full lg:w-2/5 h-[80vh] lg:h-full bg-pink-300 rounded-3xl p-5 lg:p-10 flex flex-col gap-5 md:gap-8 justify-start items-center overflow-auto'>
+            <div className='font-semibold text-2xl'>Anusit Srisawat</div>
             <div className='w-full h-auto object-contain'>
                 {/* <img className='m-auto h-full w-full md:w-2/5 max-w-36 object-contain ' src=".\images\pf1.jpg" alt="" /> */}
                 <img className='m-auto h-full w-full md:w-2/5 max-w-36 object-contain rounded-xl' src=".\images\pf2.jpg" alt="" />
@@ -20,7 +20,7 @@ function Profile() {
                     </div>
                 </div>
                 <Line />
-                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words'>
+                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full'>
 
                     <div className=''>email</div>
                     <div className='col-span-2'>sranusit44@gmail.com</div>
@@ -33,6 +33,17 @@ function Profile() {
 
                 </div>
                 <Line />
+                
+                <div className='uppercase font-semibold'>languages</div>
+                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full'>
+
+                    <div className=''>Thai</div>
+                    <div className='col-span-2'>native</div>
+
+                    <div className=''>English</div>
+                    <div className='col-span-2'>Good</div>
+
+                </div>
             </div>
         </div>
     )

@@ -14,11 +14,6 @@ function App() {
         <Details />
 
       </div>
-
-      {/* <div className='w-96 h-96 absolute top-0 left-0 blur-lg bg-white rounded-full'></div>
-      <div className='w-44 h-44 absolute bottom-0 right-0 blur-lg bg-blue-400 rounded-full'></div>
-      <div className='w-32 h-32 absolute top-0 right-0 blur-lg bg-white rounded-full'></div>
-      <div className='w-12 h-12 absolute bottom-0 left-0 blur-lg bg-white rounded-full'></div> */}
     </div>
   )
 }
