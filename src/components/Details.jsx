@@ -4,7 +4,7 @@ import ExperienceData from './ExperienceData'
 import SkillsData from './SkillsData'
 
 function Details() {
-    const [menu, setMenu] = useState(1)
+    const [menu, setMenu] = useState(0)
     const [arrayData, setArrayData] = useState(["Education", "Experience", "Skills"])
     const components = [EducationData, ExperienceData, SkillsData];
 
