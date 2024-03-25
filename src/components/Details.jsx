@@ -3,27 +3,31 @@ import EducationData from './EducationData'
 import ExperienceData from './ExperienceData'
 
 function Details() {
-    const [count, setCount] = useState(0)
+    const [menu, setMenu] = useState(1)
     const [arrayData, setArrayData] = useState(["Education", "Experience", "Skills"])
 
     return (
         <div className='w-full lg:w-3/5 h-[80vh] lg:h-full bg-blue-300 rounded-3xl p-2 md:p-5 lg:p-10 flex flex-col gap-5 justify-start items-center overflow-auto'>
             <div className='w-full h-full flex flex-col justify-start items-start gap-2'>
-                <div className='w-full flex flex-row justify-start items-start gap-4 overflow-auto scrollbar-none'>
+                <div className='w-full h-20 flex flex-row justify-start items-center gap-4 overflow-auto scrollbar-none py-4'>
 
                     {arrayData.map((item, index) => (
-                        <div key={index} className='bg-pink-300 px-4 py-2 rounded-2xl relative z-[1] cursor-pointer'>
+                        <div key={index} onClick={() => {
+                            setMenu(index);
+                            console.log(index);
+                        }}
+                            className={'bg-pink-300 px-4 py-2 rounded-2xl relative z-[1] cursor-pointer hover:bg-pink-400 hover:font-semibold duration-200' + (menu == index ? ' border-2 border-pink-400 font-bold' : ' border-2 border-transparent')}>
                             {item}
                         </div>
                     ))}
 
                 </div>
-                <div className='relative bg-pink-200 w-full grow rounded-3xl overflow-auto flex flex-col justify-start items-start p-2 md:p-5 lg:p-10'>
-                    {/* <EducationData /> */}
-                    <ExperienceData />
+                <div className='relative bg-pink-200 w-full rounded-3xl flex flex-col justify-start items-start p-2 md:p-5 lg:p-10 overflow-auto duration-200'>
+                    {menu == 0 && <EducationData />}
+                    {menu == 1 && <ExperienceData />}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

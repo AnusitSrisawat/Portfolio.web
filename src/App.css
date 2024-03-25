@@ -5,8 +5,9 @@
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px; */
+  @apply w-2 h-2 md:w-2 md:h-2
 }
 
 /* Track */
@@ -16,13 +17,15 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #88888846;
+  /* background: #88888846; */
   border-radius: 5px;
+  @apply bg-slate-500 opacity-60
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b42222;
+  /* background: #b42222; */
+  @apply bg-pink-400
 }
 
 
