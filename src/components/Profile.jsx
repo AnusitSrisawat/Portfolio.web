@@ -15,14 +15,14 @@ function Profile() {
                 <div className='flex justify-center items-center gap-2 flex-col'>
                     <div className='uppercase font-semibold cursor-pointer hover:underline duration-200'>about me</div>
                     <div className='text-justify indent-8'>
-                        <p>I am interested in data usage. and have the ability and experience to write websites I have adesire to take what I'm passionate about and do to create something new and creative. I am alwayswilling to learn new skills. I work well in a team environment. and listen effectively when solvingproblems. So I can work well under pressure.</p>
-                        <p>Hope my abilities will be useful. and create new changes for society or your company</p>
+                        <p>I am interested in data usage. and have the ability and experience to write websites I have adesire to take what I'm passionate about and do to create something new and creative. I am alwayswilling to learn new skills. I work well in a team environment. and listen effectively when solving problems. So I can work well under pressure.</p>
+                        <p>Hope my abilities will be useful. and create new changes for society or your company.</p>
                     </div>
                 </div>
                 <Line />
                 
                 <div className='uppercase font-semibold cursor-pointer hover:underline duration-200'>contacts</div>
-                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full pl-0 max-md:pl-20'>
+                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full md:pl-20 lg:pl-0'>
 
                     <div className=''>email</div>
                     <div className='col-span-2'>sranusit44@gmail.com</div>
@@ -37,7 +37,7 @@ function Profile() {
                 <Line />
                 
                 <div className='uppercase font-semibold cursor-pointer hover:underline duration-200'>languages</div>
-                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full pl-0 max-md:pl-20'>
+                <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full md:pl-20  lg:pl-0'>
 
                     <div className=''>Thai</div>
                     <div className='col-span-2'>Native</div>

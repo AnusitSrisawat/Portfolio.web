@@ -9,7 +9,7 @@ function Details() {
     return (
         <div className='w-full lg:w-3/5 h-[80vh] lg:h-full bg-blue-300 rounded-3xl p-2 md:p-5 lg:p-10 flex flex-col gap-5 justify-start items-center overflow-auto'>
             <div className='w-full h-full flex flex-col justify-start items-start gap-2'>
-                <div className='w-full h-20 flex flex-row justify-start items-center gap-4 overflow-auto scrollbar-none py-4'>
+                <div className='w-full h-[10%] flex flex-row justify-start items-center gap-4 overflow-auto scrollbar-none'>
 
                     {arrayData.map((item, index) => (
                         <div key={index} onClick={() => {
@@ -22,7 +22,7 @@ function Details() {
                     ))}
 
                 </div>
-                <div className='relative bg-pink-200 w-full rounded-3xl flex flex-col justify-start items-start p-2 md:p-5 lg:p-10 overflow-auto duration-200'>
+                <div className='relative bg-pink-200 w-full h-[90%] rounded-3xl flex flex-col justify-start items-start p-2 md:p-5 lg:p-10 duration-200 overflow-auto'>
                     {menu == 0 && <EducationData />}
                     {menu == 1 && <ExperienceData />}
                 </div>
