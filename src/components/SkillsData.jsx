@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import Line from './Line'
 
-function EducationData() {
+function SkillsData() {
 
     return (
         <div className='w-full h-full flex flex-col gap-3 justify-start items-start rounded-3xl max-md:p-2'>
@@ -27,4 +27,4 @@ function EducationData() {
     )
 }
 
-export default EducationData
+export default SkillsData

@@ -38,7 +38,7 @@ function Profile() {
                 <div className='grid grid-cols-3 gap-2 justify-start items-start break-words w-full'>
 
                     <div className=''>Thai</div>
-                    <div className='col-span-2'>native</div>
+                    <div className='col-span-2'>Native</div>
 
                     <div className=''>English</div>
                     <div className='col-span-2'>Good</div>
