@@ -16,7 +16,7 @@ function Details() {
                             setMenu(index);
                             // console.log(index);
                         }}
-                            className={'bg-pink-300 px-4 py-2 rounded-2xl relative z-[1] cursor-pointer hover:bg-pink-400 hover:font-semibold duration-200' + (menu == index ? ' border-2 border-pink-400 font-bold' : ' border-2 border-transparent')}>
+                            className={'bg-pink-300 rounded-2xl relative z-[1] cursor-pointer hover:bg-pink-400 hover:font-semibold duration-200' + (menu == index ? ' border-2 border-pink-400 font-bold px-4 py-3' : ' border-2 border-transparent px-3 py-1')}>
                             {item}
                         </div>
                     ))}
