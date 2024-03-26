@@ -8,7 +8,7 @@ const [count, setCount] = useState(0)
         <div className='relative w-full lg:w-2/5 h-[80vh] lg:h-full bg-pink-300 rounded-3xl p-5 lg:p-10 flex flex-col gap-5 md:gap-8 justify-start items-center overflow-auto' >
             <div className='font-semibold text-2xl hover:scale-125 cursor-pointer duration-200'>Anusit Srisawat</div>
             <div className='w-full md:w-2/5 max-w-36 h-auto m-auto object-contain rotateY-360'>
-                <img className='profile-image duration-200 m-auto h-full w-full object-contain rounded-xl cursor-pointer'
+                <img className='profile-image duration-500 m-auto h-full w-full object-contain rounded-xl cursor-pointer'
                     src=".\images\pf2.jpg"
                     alt=""
                 />
