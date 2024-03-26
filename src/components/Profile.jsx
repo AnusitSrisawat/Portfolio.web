@@ -1,15 +1,17 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Line from './Line'
 
 function Profile() {
-    const [count, setCount] = useState(0)
+const [count, setCount] = useState(0)
 
     return (
-        <div className='relative w-full lg:w-2/5 h-[80vh] lg:h-full bg-pink-300 rounded-3xl p-5 lg:p-10 flex flex-col gap-5 md:gap-8 justify-start items-center overflow-auto'>
+        <div className='relative w-full lg:w-2/5 h-[80vh] lg:h-full bg-pink-300 rounded-3xl p-5 lg:p-10 flex flex-col gap-5 md:gap-8 justify-start items-center overflow-auto' >
             <div className='font-semibold text-2xl hover:scale-125 cursor-pointer duration-200'>Anusit Srisawat</div>
-            <div className='w-full h-auto object-contain'>
-                <img className='hover:scale-110 duration-200 hover:rotate-6 m-auto h-full w-full md:w-2/5 max-w-36 object-contain rounded-xl cursor-pointer'
-                    src=".\images\pf2.jpg" alt="" />
+            <div className='w-full md:w-2/5 max-w-36 h-auto m-auto object-contain rotateY-360'>
+                <img className='profile-image duration-200 m-auto h-full w-full object-contain rounded-xl cursor-pointer'
+                    src=".\images\pf2.jpg"
+                    alt=""
+                />
             </div>
             <div className='flex justify-center items-center gap-5 flex-col'>
                 <div className='w-full flex justify-center items-center gap-2 flex-col'>

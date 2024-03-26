@@ -41,3 +41,11 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+.rotateY-360 img {
+  transform: rotateY(0deg);
+}
+
+.rotateY-360:hover img {
+  transform: rotateY(180deg);
+}
