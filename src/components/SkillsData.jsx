@@ -9,7 +9,7 @@ function SkillsData() {
     return (
         <div className='w-full h-full flex flex-col gap-3 justify-start items-start rounded-3xl max-md:p-2'>
 
-            <div className='font-semibold text-2xl md:text-3xl'>Skills</div>
+            <div className='font-semibold text-2xl md:text-3xl cursor-pointer hover:underline hover:scale-105 duration-200'>Skills</div>
 
             <div className='text-base flex flex-col'>
                 <div className='text-lg break-words font-semibold'>
